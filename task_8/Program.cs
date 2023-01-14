@@ -18,3 +18,12 @@ while (count <= num)
     count += 1;
 
 }
+System.Console.WriteLine("Введите число : ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+for (int count1 = 1; count1 <= num1; count1 += 1)
+{
+    if (count1 % 2 == 0)
+    {
+        System.Console.WriteLine(count1);
+    }
+}
