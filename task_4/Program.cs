@@ -11,7 +11,6 @@ int numberB1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите третье число: ");
 int numberC1 = Convert.ToInt32(Console.ReadLine());
 int maxBet = numberA1;
-if (maxBet > numberB1) maxBet = numberA1;
 if (maxBet < numberB1) maxBet = numberB1;
 if (maxBet < numberC1) maxBet = numberC1;
 {
