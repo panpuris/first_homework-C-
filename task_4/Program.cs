@@ -10,17 +10,10 @@ Console.Write("Введите второе число: ");
 int numberB1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите третье число: ");
 int numberC1 = Convert.ToInt32(Console.ReadLine());
-
-if (numberA1 > numberB1)
+int maxBet = numberA1;
+if (maxBet > numberB1) maxBet = numberA1;
+if (maxBet < numberB1) maxBet = numberB1;
+if (maxBet < numberC1) maxBet = numberC1;
 {
-    System.Console.WriteLine($"Наибольшее число: {numberA1}");
-
-}
-else if (numberB1 > numberC1)
-{
-    System.Console.WriteLine($"Наибольшее число: {numberB1}");
-}
-else
-{
-    System.Console.WriteLine($"Наибольшее число: {numberC1}");
+    System.Console.WriteLine($"Наибольшее число: {maxBet}");
 }
