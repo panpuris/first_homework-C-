@@ -10,7 +10,7 @@ if (99 < num && num < 1000)
 }
 else if (num < 100)
 {
-    System.Console.WriteLine("Третьего цифры нет");
+    System.Console.WriteLine("Третьей цифры нет");
 }
 else if (1000 < num && num < 10000)
 {
@@ -29,8 +29,18 @@ else if (1000000 < num && num < 10000000)
     System.Console.WriteLine(num % 100000 / 10000);
 } // и так далее
 
+
+
 // Вариант через массив
 
 System.Console.WriteLine("Напишите Ваше число");
-string numbers = (Console.ReadLine()); ;
-System.Console.WriteLine(numbers[2]);
+string numbers = Console.ReadLine ();
+int n = numbers.Length; // когда я хочу в дальнейшем использовать переменную длинны массива, я же должен ей присвоить значение int?
+if  ( n >= 3 )
+{ 
+    System.Console.WriteLine(numbers[2]);
+}
+else if  ( n < 3 )
+{
+    System.Console.WriteLine("Третьей цифры нет");
+}
