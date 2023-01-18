@@ -13,3 +13,7 @@ else
 {
     System.Console.WriteLine("Вы ввели неверное число, попробуйте еще раз!");
 }
+// Вариант с массивом
+System.Console.WriteLine("Напишите Ваше число");
+string numbers = (Console.ReadLine()); ;
+System.Console.WriteLine(numbers[1]);
