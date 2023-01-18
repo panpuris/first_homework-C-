@@ -9,7 +9,7 @@ if (0 < weekDayNum && weekDayNum < 6)
 {
     System.Console.WriteLine("Сейчас будни, работаем дальше");
 }
-else if (5 < weekDayNum && weekDayNum<8)
+else if (5 < weekDayNum && weekDayNum < 8)
 {
     System.Console.WriteLine("Отлично сейчас выходные, можно расслабиться!");
 }
