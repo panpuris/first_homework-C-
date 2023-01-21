@@ -30,6 +30,24 @@ else if (1000000 < num && num < 10000000)
 } // и так далее
 
 
+ //Правильное математическое решение 
+
+// System.Console.Write("Введите число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+
+// if (num > 99)
+// {
+//     while (num > 999)
+//     {
+//         num = num / 10;
+//         System.Console.WriteLine(num);
+//     }
+//     System.Console.WriteLine(num%10);
+// }
+// else
+// {
+//     System.Console.WriteLine("Третьей цифры нет");
+// }
 
 // Вариант через массив
 
