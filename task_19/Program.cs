@@ -28,3 +28,22 @@ if (paliNum.Length > 5 || paliNum.Length < 5)
 // string? text = "123456";
 // int num = Convert.ToInt32(Convert.ToString(text[4]));
 // System.Console.WriteLine(num);
+
+//Математическое решение
+System.Console.WriteLine("Введите пятизначное число: ");
+int palinum = Convert.ToInt32(Console.ReadLine());
+if (palinum > 9999 && palinum <= 99999)
+{
+    if (palinum / 10000 == palinum % 10 && (palinum / 1000) % 10 == (palinum / 10) % 10)
+    {
+        System.Console.WriteLine($"Число {palinum} является палиндромом");
+    }
+    else
+    {
+        System.Console.WriteLine($"Число {palinum} не является палиндромом");
+    }
+}
+else
+{
+    System.Console.WriteLine("Введите корректное число!!!");
+}
