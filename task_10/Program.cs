@@ -17,7 +17,7 @@ else
 
 // Вариант с массивом
 System.Console.WriteLine("Напишите Ваше число");
-string numbers = (Console.ReadLine());
+string? numbers = (Console.ReadLine());
 if (numbers.Length == 3)
 {
     System.Console.WriteLine(numbers[1]);
