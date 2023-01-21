@@ -7,7 +7,7 @@
 
 System.Console.WriteLine("Введите пятизначное число для проверки: ");
 string? paliNum = Console.ReadLine();
-if (paliNum.Length == 5)
+if (paliNum!.Length == 5)
 {
     if (paliNum[0] == paliNum[4] || paliNum[1] == paliNum[3])
     {

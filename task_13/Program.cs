@@ -53,7 +53,7 @@ else if (1000000 < num && num < 10000000)
 
 System.Console.WriteLine("Напишите Ваше число");
 string? numbers = Console.ReadLine();
-int n = numbers.Length; // когда я хочу в дальнейшем использовать переменную длинны массива, я же должен ей присвоить значение int?
+int n = numbers!.Length; // когда я хочу в дальнейшем использовать переменную длинны массива, я же должен ей присвоить значение int?
 if (n >= 3)
 {
     System.Console.WriteLine(numbers[2]);
