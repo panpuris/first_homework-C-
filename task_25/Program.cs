@@ -37,24 +37,65 @@ int numbB = InputNumber ("Введите число B : ");
 System.Console.WriteLine(Rank(numbA,numbB));
 
 
-//Решение без методов с проверкой
-
+//Решение без метода, но с проверкой
 System.Console.WriteLine("Введите число A : ");
 string? numA = Console.ReadLine();
-bool result1 = int.TryParse(numA, out var number1);
+int number1;
+while (true)
+{
+    if (int.TryParse(numA, out number1))
+    {
+        break;
+    }
+    else
+    {
+        System.Console.WriteLine("Введите корректные числа!!!");
+        numA = Console.ReadLine();
+    }
+    
+}
 
 System.Console.WriteLine("Введите число B : ");
 string? numB = Console.ReadLine();
-bool result2 = int.TryParse(numB, out var number2);
+int number2;
+while (true)
+{
+    if (int.TryParse(numB, out number2))
+    {
+        break;
+    }
+    else
+    {
+        System.Console.WriteLine("Введите корректные числа!!!");
+        numB = Console.ReadLine();
+    }
+   
 
-if (result1 == true && result2==true)
-{
-    System.Console.WriteLine(Math.Pow(number1,number2));
 }
-else
-{
-    System.Console.WriteLine("Введите корректные числа!!!");
-}
+
+System.Console.WriteLine(Math.Pow(number1, number2));
+
+
+
+// System.Console.WriteLine("Введите число A : ");
+// string? numA = Console.ReadLine();
+// bool result1 = int.TryParse(numA, out var number1);
+
+// System.Console.WriteLine("Введите число B : ");
+// string? numB = Console.ReadLine();
+// bool result2 = int.TryParse(numB, out var number2);
+
+// if (result1 == true && result2==true)
+// {
+//     System.Console.WriteLine(Math.Pow(number1,number2));
+// }
+// else
+// {
+//     System.Console.WriteLine("Введите корректные числа!!!");
+// }
+//p.s. Этот вариант получился случайно пока я искал вариант *распаковки* метода InputNumber, 
+//подогнав информацию о TryParse с открытых источников под эту задачу
+
 
 // Решение без методов и без проверки
 
