@@ -21,8 +21,6 @@ int InputNumber(string str)
     return number;
 }
 
-
-
 int Result(int nums)
 {
     int sum = 0;
