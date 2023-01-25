@@ -26,8 +26,8 @@ int Result(int nums)
     int sum = 0;
     for (int i = 0; i < nums; i++)
     {
-        sum = sum+ nums%10;
-        nums/=10;
+        sum = sum + nums % 10;
+        nums /= 10;
     }
     return sum;
 }
@@ -37,3 +37,18 @@ int sum = Result(num);
 
 System.Console.WriteLine(sum);
 
+
+// //На случай если нам будет необходимо распечатать цифру из строчного масива, необходимо пользоваться двойной конвертацией
+// string? text = "123456";
+// int num = Convert.ToInt32(Convert.ToString(text[4]));
+// System.Console.WriteLine(num);
+System.Console.WriteLine("Введите число");
+string? text = Console.ReadLine();
+int numBers = Convert.ToInt32(Convert.ToString(text!.Length));
+int result = 0;
+for (int i = 0; i < numBers; i++)
+{
+    result = result + Convert.ToInt32(Convert.ToString(text[i]));
+}
+
+System.Console.WriteLine(result);
