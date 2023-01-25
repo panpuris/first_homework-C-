@@ -25,14 +25,3 @@ void RandArray(int[] numbers)
 }
 int[] numbers = new int[8];
 RandArray(numbers);
-
-// void PrintArray(int[] numbers){
-//     System.Console.Write("[");
-//     for (int i = 0; i < numbers.Length; i++)
-//     {
-//         System.Console.Write($"{numbers[i]}, ");
-//     }
-//     System.Console.Write("]");
-// }
-// PrintArray(numbers);
-
