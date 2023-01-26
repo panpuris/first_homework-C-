@@ -22,14 +22,26 @@ int InputNumber(string str)
 }
 
 int Result(int nums)
+// {
+//     // полурабочее решение 
+//     // int sum = 0;
+//     // for (int i = 0; i < nums; i++)
+//     // {
+//     //     sum = sum + nums % 10;
+//     //     nums /= 10;
+//     // }
+//     // return sum;
+
+// }
 {
-    int sum = 0;
-    for (int i = 0; i < nums; i++)
-    {
-        sum = sum + nums % 10;
-        nums /= 10;
-    }
-    return sum;
+int sum = 0;
+while (nums > 0)
+{
+sum = sum + nums % 10;
+nums /= 10;
+
+}
+return sum;
 }
 
 int num = InputNumber("Введите число : ");
