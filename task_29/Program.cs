@@ -25,3 +25,7 @@ void RandArray(int[] numbers)
 }
 int[] numbers = new int[8];
 RandArray(numbers);
+
+
+int prob = 7/10;
+System.Console.WriteLine(prob);
