@@ -20,21 +20,21 @@ void PrintArray(int[] array)
 
 int FindNumb(int[] array)
 {
-int result = 0;
-for (int i = 0; i<array.Length;i++)
-{
-    if (array[i] > 0)
+    int result = 0;
+    for (int i = 0; i < array.Length; i++)
     {
-        result++;
+        if (array[i] > 0)
+        {
+            result++;
+        }
     }
-}
-return result; 
+    return result;
 }
 
 System.Console.WriteLine("Введите колличество цифр : ");
 int num = Convert.ToInt32(Console.ReadLine());
-int [] arr = ArrayFill(num,-100,101);
-PrintArray (arr);
+int[] arr = ArrayFill(num, -100, 101);
+PrintArray(arr);
 System.Console.WriteLine(FindNumb(arr));
 
 
