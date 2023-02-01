@@ -31,7 +31,7 @@ int FindNumb(int[] array)
     return result;
 }
 
-System.Console.WriteLine("Введите колличество цифр : ");
+System.Console.WriteLine("Введите колличество чисел в массиве : ");
 int num = Convert.ToInt32(Console.ReadLine());
 int[] arr = ArrayFill(num, -100, 101);
 PrintArray(arr);
