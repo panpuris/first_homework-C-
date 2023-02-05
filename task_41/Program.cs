@@ -47,3 +47,17 @@ System.Console.WriteLine(FindNumb(arr));
 //     }
 // }
 // System.Console.WriteLine(result);
+
+
+// Console.Write("Введите элементы(через пробел): "); 
+// int[] arr = Array.ConvertAll(Console.ReadLine()!.Split(), int.Parse);
+// var arr2 = Console.ReadLine()!.Split(" ").Select(int.Parse).ToArray(); 
+// int count = 0; 
+
+// for (int i = 0; i < arr.Length; i++) 
+// { 
+//     if (arr[i] > 0) 
+//     { 
+//         count++; 
+//     } 
+// }

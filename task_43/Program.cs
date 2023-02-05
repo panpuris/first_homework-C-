@@ -56,7 +56,7 @@ double LineFunc(double[] arr)
 
 double[] arr = ZnachArray("Введите значения по очереди, b1 , k1 , b2 , k2 !");
 PrintArray(arr);
-System.Console.WriteLine(LineFunc(arr));
+System.Console.Write($"({LineFunc(arr)};{LineFunc(arr)})");
 
 
 
