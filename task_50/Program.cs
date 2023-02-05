@@ -51,13 +51,40 @@ void FindNumber(int[,] matr)
 
 }
 
+void FindElement(int[,] mat)
+{
+    System.Console.WriteLine("Введите значение искомого элемента: ");
+    int numb = Convert.ToInt32(Console.ReadLine());
+    bool found = false;
+    for (int i = 0; i < mat.GetLength(0); i++)
+    {
+        for (int j = 0; j < mat.GetLength(1); j++)
+        {
+            if (numb == mat[i, j])
+            {
+                System.Console.WriteLine($"Элемент {numb} находится в строке с индексом [{i}] и в столбце с индексом [{j}] !");
+                found = true;
+                break;
+
+            }
+
+
+        }
+    }
+    if (!found)
+    {
+        System.Console.WriteLine("Данного элемента нет в этом массиве !");
+    }
+}
+
 System.Console.WriteLine("Введите m и n: ");
 int m = Convert.ToInt32(Console.ReadLine());
 int n = Convert.ToInt32(Console.ReadLine());
 int[,] matrix = FillMatrix(m, n);
 System.Console.WriteLine();
 PrintMatrix(matrix);
-FindNumber(matrix);
+FindNumber(matrix); // поиск значения элемента по заданным индексам
+FindElement(matrix); // проверка наличия элемента и вывод его позиции
 
 
 
