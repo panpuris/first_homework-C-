@@ -36,6 +36,7 @@ void PrintMatrix(int[,] matr)
         System.Console.WriteLine();
     }
 }
+
 void SortArray(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
