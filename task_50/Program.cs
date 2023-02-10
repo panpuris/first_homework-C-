@@ -16,7 +16,7 @@ int[,] FillMatrix(int rows, int cols)
     {
         for (int j = 0; j < cols; j++)
         {
-            matr[i, j] = rand.Next(0, 100);
+            matr[i, j] = rand.Next(0,10);
         }
     }
 
@@ -64,7 +64,7 @@ void FindElement(int[,] mat)
             {
                 System.Console.WriteLine($"Элемент {numb} находится в строке с индексом [{i}] и в столбце с индексом [{j}] !");
                 found = true;
-                break;
+                return;
 
             }
 
