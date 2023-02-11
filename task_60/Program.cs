@@ -44,7 +44,7 @@ void PrintMatrix(int[,,] matr)
             System.Console.WriteLine();
             for (int k = 0; k < matr.GetLength(2); k++)
             {
-                Console.Write($"{matr[i, j, k]}({i},{j},{k}) ");
+                System.Console.Write($"{matr[i, j, k]}({i},{j},{k}) ");
             }
         }
 
