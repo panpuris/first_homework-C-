@@ -11,6 +11,7 @@
 
 int[,,] FillMatrix3D(int x, int y, int z)
 {
+    // int count = 10; способ на случай если рандом рандом не подействует и добавит одинаковые числа
     Random rand = new Random();
     int[,,] matr = new int[x, y, z];
 
@@ -20,8 +21,14 @@ int[,,] FillMatrix3D(int x, int y, int z)
         {
             for (int k = 0; k < z; k++)
             {
+
+                // matr[i, j, k] = count; но будет поочередное возрастание с шагом 
+
                 matr[i, j, k] = rand.Next(10, 100);
+                System.Console.WriteLine(matr[i, j, k]);
+                // count += 5; указанным здесь
             }
+
         }
     }
 
